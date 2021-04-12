@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+}
+html, body, div, img {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+
+}
+body {
+  font: normal 100% Helvetica, Arial, sans-serif;
+    line-height: 1;
+    text-align: center;
+    object-fit: fill;
+     background-color: #F132;
+}
+h1 {
+  font-family: Georgia, serif;
+    font-size: 1.5em;
+
+}
+#ph_gal {
+    margin: 40px auto;
+    padding: 0 1em;
+    max-width: 61.75em;
+}
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5px;
+  justify-content: center;
+  align-items: center ;
+}
+
+.photo {
+
+  min-width: 0.875em;
+    
+     height: 300px;
+     margin: 5px;
+}
