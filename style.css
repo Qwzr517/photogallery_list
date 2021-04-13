@@ -37,7 +37,7 @@ h1 {
 
 .photo {
 
-  min-width: 0.087em;
+  min-width: 100vw;
 
      height: 300px;
      margin: 5px;
