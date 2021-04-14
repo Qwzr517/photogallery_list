@@ -1,9 +1,6 @@
-// Portrait
-
-@media (max-aspect-ratio: 1/1) {
+/@media (max-aspect-ratio: 1/1) {
   li {
     height: 30vh;
-    width: 30vw;
   }
 }
 
@@ -12,7 +9,6 @@
 @media (max-height: 480px) {
   li {
     height: 80vh;
-    width: 30vw;
   }
 }
 
@@ -33,6 +29,7 @@
     min-width: 0;
   }
 }
+
 * {
     box-sizing: border-box;
 }
