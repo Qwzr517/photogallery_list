@@ -26,8 +26,8 @@ btn.addEventListener('click', function() {
     hexColor += hex[getRndmNum()]
     //hexColor1 += hex[getRndmNum()]
   }
-  document.querySelector('#ph_gal').style.backgroundColor = hexColor;
-//  document.body.style.backgroundColor = hexColor1;
+  //document.querySelector('#ph_gal').style.backgroundColor = hexColor;
+  document.body.style.backgroundColor = hexColor;
 });
 
 function getRndmNum(){
