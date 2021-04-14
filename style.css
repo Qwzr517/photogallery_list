@@ -1,11 +1,11 @@
-@media all and (max-width: 1200px) {
-  div {
-    width: 50%;
+@media (max-aspect-ratio: 1/1) {
+  li {
+    height: 30vh;
   }
 }
-@media all and (max-width: 480px) {
-  div {
-    width: 100%;
+@media (max-height: 480px) {
+  li {
+    height: 80vh;
   }
 }
 * {
@@ -18,39 +18,43 @@ html, body, div, img {
     font-size: 100%;
     font: inherit;
     vertical-align: baseline;
-
 }
+
 body {
   font: normal 100% Helvetica, Arial, sans-serif;
     line-height: 1;
     text-align: center;
-    object-fit: fill;
      background-color: #F132;
 }
+
 h1 {
   font-family: Georgia, serif;
     font-size: 1.5em;
 
 }
-#ph_gal {
-    margin: 40px auto;
-    padding: 0 1em;
-  max-width: 41.75em;
-}
-.gallery {
+ul {
   display: flex;
   flex-wrap: wrap;
-  padding: 5px;
-  justify-content: center;
-  align-items: center ;
+  }
+
+li {
+  height: 40vh;
+  flex-grow: 1;
+}
+li:last-child {
+  // There's no science in using "10" here. In all my testing, this delivered the best results.
+  flex-grow: 2;
 }
 
-.photo {
-
-  max-width: 41.75em/3;
-  height: auto;
-  margin: 5px;
-}
 img {
-  max-width: 100%;
+  max-height: 100%;
+  min-width: 100%;
+  object-fit: cover;
+  vertical-align: bottom;
+}
+
+@media (max-height: 480px) {
+  li {
+    height: 80vh;
+  }
 }
