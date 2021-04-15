@@ -1,11 +1,4 @@
 
-
-@media (max-aspect-ratio: 1/1) and (max-width: 1080px) {
-  ul {
-    display: grid;
-    justify-content: center;
-  }
-
   li {
     height: auto;
     width: 24vw;
@@ -14,15 +7,7 @@
     width: 100%;
     min-width: 0;
   }
-.gallery:nth-child(3n+1) { order: 1; }
-.gallery:nth-child(3n+2) { order: 2; }
-.gallery:nth-child(3n)   { order: 3; }
-.container::before,
-.container::after {
-  content: "";
-  flex-basis: 100%;
-  width: 0;
-  order: 2;
+
 }
 }
 
@@ -40,18 +25,14 @@ h1 {
 
 }
 ul {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-gap: 15px;
+  grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
   }
 
 li {
   height: 40vh;
-  flex-grow: 1;
   list-style-type: none;
-}
-li:last-child {
-  // There's no science in using "10" here. In all my testing, this delivered the best results.
-  flex-grow: 10;
 }
 
 img {
