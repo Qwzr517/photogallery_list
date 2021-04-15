@@ -4,8 +4,11 @@ body {
     line-height: 1;
     text-align: center;
     background-color: #F132;
-    margin:20px;
+    margin: 0;
     padding:0;
+}
+li {
+  list-style-type: none;
 }
 
 h1 {
@@ -15,8 +18,8 @@ h1 {
 }
 .gallery {
   display: grid;
-    grid-template-columns: repeat(3, 100fr);
-    grid-template-rows: repeat(3, 20vw);
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(auto-fit, 20vw);
     grid-gap: 1px;
     grid-auto-flow: dense;
     margin-right:  3vw;
@@ -26,16 +29,9 @@ h1 {
   width:100%;
     height:100%;
     object-fit: cover;
-    object-position:50% 50%;
+    object-position: center;
     cursor:pointer;
     transition:.5s ease-in-out;
-}
-li {
-  list-style-type: none;
-}
-
-.gallery:hover .image img{
-    transform:scale(1.5);
 }
 
 @media screen and (max-width:600px){
@@ -44,5 +40,4 @@ li {
         grid-gap: 1px;
         grid-template-columns: repeat(3,1fr);
     }
-
 }
