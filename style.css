@@ -45,11 +45,3 @@ h1 {
     object-position: center;
     cursor:pointer;
 }
-
-@media screen and (max-width:600px){
-    .gallery{
-        min-width: 100vw;
-        grid-gap: 1px;
-        grid-template-columns: repeat(3,1fr);
-    }
-}
