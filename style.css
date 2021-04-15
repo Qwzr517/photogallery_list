@@ -40,7 +40,7 @@ li {
 
 @media screen and (max-width:600px){
     .gallery{
-        min-width: 22vw;
+        min-width: 100%;
         grid-gap: 1px;
         grid-template-columns: repeat(3,1fr);
     }
