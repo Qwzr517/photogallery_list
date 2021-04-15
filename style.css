@@ -37,6 +37,7 @@ ul {
 li {
   height: 40vh;
   flex-grow: 1;
+  list-style-type: none;
 }
 li:last-child {
   // There's no science in using "10" here. In all my testing, this delivered the best results.
