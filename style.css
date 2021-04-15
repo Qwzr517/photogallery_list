@@ -11,9 +11,9 @@
   }
 }
 
-@media (max-aspect-ratio: 1/1) and (max-width: 480px) {
+@media (max-aspect-ratio: 1/1) and (max-width: 1080px) {
   ul {
-        flex-wrap: wrap; 
+        flex-wrap: wrap;
   }
 
   li {
