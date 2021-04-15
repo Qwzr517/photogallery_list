@@ -15,7 +15,7 @@ h1 {
 }
 .gallery {
   display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 100fr);
     grid-template-rows: repeat(3, 20vw);
     grid-gap: 15px;
     grid-auto-flow: dense;
@@ -40,8 +40,8 @@ li {
 
 @media screen and (max-width:600px){
     .gallery{
-        min-width: 200px;
-        grid-template-columns: repeat(2,1fr);
+        min-width: 180px;
+        grid-template-columns: repeat(3,1fr);
     }
 
 }
