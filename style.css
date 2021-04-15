@@ -1,28 +1,17 @@
-@media (max-aspect-ratio: 1/1) {
-  li {
-    height: 30vh;
-  }
-}
 
-
-@media (max-height: 480px) {
-  li {
-    height: 80vh;
-  }
-}
 
 @media (max-aspect-ratio: 1/1) and (max-width: 1080px) {
   ul {
-        flex-wrap: wrap;
+    flex-wrap: wrap;
   }
 
   li {
     height: auto;
-    width: 100%;
+    width: 30%;
   }
   img {
     width: 100%;
-    max-height: 75vh;
+    max-height: 30vh;
     min-width: 0;
   }
 }
@@ -32,7 +21,7 @@ body {
   font: normal 100% Helvetica, Arial, sans-serif;
     line-height: 1;
     text-align: center;
-     background-color: #F132;
+    background-color: #F132;
 }
 
 h1 {
@@ -58,5 +47,5 @@ img {
   max-height: 100%;
   min-width: 100%;
   object-fit: cover;
-  vertical-align: bottom;
+  vertical-align: center;
 }
