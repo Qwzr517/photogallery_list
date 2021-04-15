@@ -2,7 +2,8 @@
 
 @media (max-aspect-ratio: 1/1) and (max-width: 1080px) {
   ul {
-    flex-wrap: wrap;
+    display: flex;
+    flex-flow: column wrap;
   }
 
   li {
@@ -11,12 +12,14 @@
   }
   img {
     width: 100%;
-    
     min-width: 0;
   }
+.gallery:nth-child(3n+1) { order: 1; }
+.gallery:nth-child(3n+2) { order: 2; }
+.gallery:nth-child(3n)   { order: 3; }
 }
 
-
+* {box-sizing: border-box;}
 body {
   font: normal 100% Helvetica, Arial, sans-serif;
     line-height: 1;
