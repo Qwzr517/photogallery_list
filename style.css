@@ -39,9 +39,10 @@ img {
 .gallery:hover .image img{
     transform:scale(1.5);
 }
-@media screen and (max-width:500px){
+@media screen and (max-width:600px){
     .gallery{
-        grid-template-columns: repeat(1,1fr);
+        min-width: 200px;
+        grid-template-columns: repeat(3,1fr);
     }
 
 }
