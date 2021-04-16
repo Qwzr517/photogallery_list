@@ -5,13 +5,13 @@ const photo = document.getElementById('1');
   console.log(id)
 })
 //ОТКРЫТИЕ В ПОЛНОМ РАЗМЕРЕ В НОВОМ ОКНЕ
-let imgs = document.querySelectorAll("img");
+/* let imgs = document.querySelectorAll("img");
 for (var i = 0; i < imgs.length; i++) {
   imgs[i].addEventListener("click", function(e) {
     let src = e.currentTarget.src;
     window.open("about:black", "image").document.write("<img src='" + src + "' alt='something' />");
   });
-}
+} */
 
 //RANDOM backgroundColor
 const hex = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, "A", "B", "C", "D","E","F"];
@@ -26,7 +26,7 @@ btn.addEventListener('click', function() {
     hexColor += hex[getRndmNum()]
     //hexColor1 += hex[getRndmNum()]
   }
-  //document.querySelector('#ph_gal').style.backgroundColor = hexColor;
+//  document.querySelector('#ph_gal').style.backgroundColor = hexColor;
   document.body.style.backgroundColor = hexColor;
 });
 
