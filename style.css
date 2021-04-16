@@ -19,6 +19,8 @@
 /* Target device in portrait mode */
 li{
   height: 20vh;
+  margin-bottom:  0;
+  padding: 0;
 }
 }
 
