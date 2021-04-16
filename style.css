@@ -17,9 +17,8 @@
 } */
 @media all and (orientation: portrait) {
 /* Target device in portrait mode */
-img {
-  max-width: 25%;
-  max-height: 25%;
+li{
+  height: 20vh;
 }
 }
 
@@ -43,6 +42,7 @@ ul {
   flex-wrap: wrap;
   margin: 0;
   padding:0;
+  list-style: none;
   }
 
 li {
