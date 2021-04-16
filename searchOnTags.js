@@ -27,9 +27,11 @@ btn2.addEventListener('click', function() {
   }
 })
 
-btn3.addEventListener('click', function(e) {
-  document.querySelectorAll("li").style.display = "block";
-})
+btn3.addEventListener('click', function() {
+  for (let i = 0; i < imgs.length; i++) {
+   ids[i] = imgs[i].id;
+  document.getElementById(ids[i]).style.display = "block";
+}})
 
 
 //получаем значение ввода, значения фото, отбираем элементы из массива
