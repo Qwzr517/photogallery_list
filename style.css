@@ -50,8 +50,8 @@ h1 {
     object-position: center;
     cursor:pointer;
 }
-@media screen (max-width: 1080px) {
-   .gallery {
-     grid-auto-rows: 20vh;
+@media screen (max-width: 480px) {
+   img {
+     max-height:  20vh;
    }
 }
