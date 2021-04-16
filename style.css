@@ -1,3 +1,5 @@
+
+
 * {box-sizing: border-box;}
 body {
   font: normal 100% Helvetica, Arial, sans-serif;
@@ -23,9 +25,11 @@ h1 {
     grid-auto-flow: dense;
     margin-right:  3vw; */
      display: grid;
-     grid-template-columns: repeat(3, 1fr);
+     grid-template-columns: repeat(3, minmax(33%, 1fr) );
+  /*   grid-template-columns: repeat(3, 1fr);*/
      grid-auto-rows: 40vh;
      grid-gap: 1px;
+     grid-auto-flow: dense;
   }
 
 
@@ -49,9 +53,4 @@ h1 {
     object-fit: cover;
     object-position: center;
     cursor:pointer;
-}
-@media screen (max-width: 480px) {
-   img {
-     max-height:  20vh;
-   }
 }
