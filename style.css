@@ -50,3 +50,8 @@ h1 {
     object-position: center;
     cursor:pointer;
 }
+@media (max-aspect-ratio: 1/1) and (max-width: 680px) {
+   .gallery {
+     grid-auto-rows: 20vh;
+   }
+}
