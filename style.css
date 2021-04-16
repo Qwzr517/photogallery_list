@@ -15,15 +15,17 @@ li {
 h1 {
   font-family: Georgia, serif;
     font-size: 1.5em;
-
+}
+img {
+  max-width: 100%;
 }
 .gallery {
-  display: grid;
+    display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(auto-fit, 20vw);
     grid-gap: 1px;
     grid-auto-flow: dense;
-    margin-right:  3vw; 
+    margin-right:  3vw;
   /*   display: grid;
      grid-template-columns: repeat(3, minmax(33%, 1fr) );
      grid-template-columns: repeat(3, 1fr);
@@ -32,6 +34,13 @@ h1 {
      grid-auto-flow: dense; */
   }
 
+  @media all and (orientation: portrait) {
+  /* Target device in portrait mode */
+  img {
+    max-width: 100%;
+    max-height: 25%;
+  }
+}
 
 .box4  {
   grid-column: 1 ;
