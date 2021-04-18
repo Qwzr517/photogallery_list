@@ -19,12 +19,12 @@
 /* Target device in portrait mode */
 li{
   height: 20vh;
-  margin-bottom:  0;
+  margin:  0;
   padding: 0;
 }
 }
 
-{
+*{
   margin: 0;
   padding:0;
 }
@@ -48,20 +48,19 @@ ul {
   }
 
 li {
-  height: 40vh;
+  max-height: 40vh;
+  max-width: 25%;
   flex-grow: 1;
   list-style-type: none;
+
 }
-li:last-child {
-  // There's no science in using "10" here. In all my testing, this delivered the best results.
-  flex-grow: 10;
-}
+
 .hide {
   display: none;
 }
 img {
   max-height: 100%;
   min-width: 100%;
-  object-fit: cover;
-  vertical-align: center;
+  object-fit: contain;
+  vertical-align:  center;
 }
