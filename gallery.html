@@ -6,25 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style_tablet.css">
   </head>
-<h1>Sup, dawg!</h1>
+<h1>Auf</h1>
   <h2>
     <button type="button1" name="Cli" id="btn1">Нажми меня!</button>
+    <input class="place_for_search" type="text" id="text-to-find" value="" placeholder="Search" autofocus>
+    <button class="button_for_turn_back" type="button" id="btn2">Найти</button>
+    <button class="button_for_search" type="button"  id="btn3">Отмена</button>
   </h2>
+  <h3>список запросов: kate,nasty1-4,nikita,pavel,rocket</h3>
 <body>
-  <div  id="ph_gal" class="gallery">
+  <ul  id="ph_gal" class="gallery">
 
-     <img class="photo" id="1"   src="2.jpg"></img>
-     <img class="photo" id="2"   src="4.jpg"></img>
-     <img class="photo" id="3"   src="3.jpg"></img>
-     <img class="box4" id="4"    src="5.jpg"></img>
-     <img class="photo" id="5"   src="6.jpg"></img>
-     <img class="photo" id="6"   src="2.jpg"></img>
-     <img class="box7" id="7"    src="3.jpg"></img>
-     <img class="photo" id="8"   src="4.jpg"></img>
-     <img class="photo" id="9" src="2.jpg"></img>
-     <img class="photo" id="10" src="6.jpg"></img>
- </div>
-  <script type="text/javascript" src="main.js">  </script>
+   <li>  <img class="photo" id="nasty1" src="1.jpg"></img> </li>
+   <li>  <img class="photo" id="nikita" src="4.jpg"></img> </li>
+   <li>  <img class="photo" id="night" src="3.jpg"></img> </li>
+   <li>  <img class="photo" id="kate" src="5.jpg"></img> </li>
+   <li>  <img class="photo" id="nasty2" src="6.jpg"></img> </li>
+   <li>  <img class="photo" id="nasty3" src="2.jpg"></img> </li>
+   <li>  <img class="photo" id="nasty4" src="3.jpg"></img> </li>
+   <li>  <img class="photo" id="nikita2" src="4.jpg"></img> </li>
+   <li>  <img class="photo" id="pavel" src="7.jpg"></img> </li>
+   <li>  <img class="photo" id="rocket" src="8.jpg"></img> </li>
+
+  </ul>
+
+  <script  src="main.js">  </script>
+  <script  src="searchOnTags.js">  </script>
+  <script  src="jquery.js">  </script>
 </body>
 </html>
