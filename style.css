@@ -6,7 +6,7 @@ body {
     line-height: 1;
     text-align: center;
     background-color: #F132;
-    margin: 0;
+    
     padding:0;
 }
 li {
@@ -22,7 +22,7 @@ img {
 .gallery {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(auto-fit, 20vw);
+    grid-template-rows: repeat(auto-fit, 33vw);
     grid-gap: 1px;
     grid-auto-flow: dense;
     margin-right:  3vw;
