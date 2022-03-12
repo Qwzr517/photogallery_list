@@ -1,5 +1,5 @@
 <?php
 
-include_once("gallery.html");
+include_once("main.html");
 
  ?>
