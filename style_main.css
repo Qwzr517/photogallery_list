@@ -13,3 +13,9 @@ background: linear-gradient(to right,  var(--color1) 0%,var(--color2) 48%);
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=var(--color1), endColorstr=var(--color1),GradientType=1 );
 
 }
+img{
+  max-width: 400px;
+}
+.col{
+  padding-left: 0px;
+}
