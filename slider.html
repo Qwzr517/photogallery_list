@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" type="text/css" href="style_gallery_flex.css">
+        <link rel="stylesheet" type="text/css" href="style_slider.css">
+    <title>Gallery_flexbox</title>
+  </head>
+  <h1>Галерея + слайдер</h1>
+  <body>
+    <div class="slideshow_container">
+
+      <div class="containers">
+          <img class="thumb" src = "img/thumbs/nastoles_low.jpg" style = "width:60%">
+      </div>
+
+      <div class="containers">
+          <img class="thumb" src = "img/thumbs/rocket_low.jpg" style = "width:60%">
+      </div>
+
+      <div class="containers">
+          <img class="thumb" src = "img/thumbs/spb_low.jpg" style = "width:60%">
+      </div>
+
+      <a class="Back" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="forward" onclick="plusSlides(1)">&#10095;</a>
+
+    </div>
+<br>
+<div style="text-align:center">
+  <span class="dots" onclick="currentSlide(1)"></span>
+  <span class="dots" onclick="currentSlide(2)"></span>
+  <span class="dots" onclick="currentSlide(3)"></span>
+</div>
+
+<div class="container">
+      <ul>
+  <li>
+    <img class="thumb" id="1"   src="img/thumbs/nastoles_low.jpg"></img>
+  </li>
+  <li>
+    <img class="thumb" id="2"   src="img/thumbs/nastoles2_low.jpg"></img>
+  </li>
+  <li>
+     <img class="thumb" id="3"   src="img/thumbs/rocket_low.jpg"></img>
+  </li>
+  <li>
+    <img class="thumb" id="4"   src="img/thumbs/nikkatedog_low.jpg"></img>
+  </li>
+  <li>
+    <img class="thumb" id="5"   src="img/thumbs/nikEZ_low.jpg"></img>
+  </li>
+  <li>
+    <img class="thumb" id="6"   src="img/thumbs/suck_low.jpg"></img>
+  </li>
+  <li>
+    <img class="thumb" id="7"   src="img/thumbs/msk_low.jpg"></img>
+  </li>
+  <li>
+    <img class="thumb" id="8"   src="img/thumbs/me_low.jpg"></img>
+  </li>
+  <li>
+    <img class="thumb" id="9"   src="img/thumbs/olgnight_low.jpg"></img>
+  </li>
+  <li>
+    <img class="thumb" id="10"   src="img/thumbs/nik_low.jpg"></img>
+  </li>
+  <li>
+    <img class="thumb" id="11"   src="img/thumbs/nastpiano_low.jpg"></img>
+  </li>
+  <li>
+    <img class="thumb" id="12"   src="img/thumbs/fingers_low.jpg"></img>
+  </li>
+  <li>
+    <img class="thumb" id="13"   src="img/thumbs/forest_low.jpg"></img>
+  </li>
+  <li>
+    <img class="thumb" id="14"   src="img/thumbs/road_low.jpg"></img>
+  </li>
+  <li>
+    <img class="thumb" id="15"   src="img/thumbs/spb_low.jpg"></img>
+  </li>
+  <li></li>
+</ul>
+    </div>
+
+ <script type="text/javascript" src="slider.js"></script>
+  <script type="text/javascript" src="my_popup.js"></script>
+  </body>
+</html>
