@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="tabl.css">
+    <title>Простая таблица с вводом</title>
+  </head>
+<h1>Динамическая таблица курса валют в рублях</h1>
+  <body>
+    <div class=" container ">
+      <table id="myTable">
+    <tr>
+      <th>Код валюты</th>
+      <th>Буквенное обозначение</th>
+      <th>Название валюты</th>
+      <th>Единиц</th>
+      <th>Курс в рублях</th>
+    </tr>
+    <tr>
+      <td>840</td>
+      <td>USD</td>
+      <td>Доллар США</td>
+      <td>1</td>
+      <td id = "USD">110</td>
+    </tr>
+    <tr>
+      <td>978</td>
+      <td>EUR</td>
+      <td>Евро</td>
+      <td>1</td>
+      <td id = "EUR">140</td>
+    </tr>
+    <tr>
+      <td>156</td>
+      <td>CNY</td>
+      <td>Китайский юань</td>
+      <td>1</td>
+      <td id = "CNY">17</td>
+    </tr>
+    <tr>
+      <td>398</td>
+      <td>KZT</td>
+      <td>Казахстанских тенге</td>
+      <td>100</td>
+      <td id = "KZT">22</td>
+    </tr>
+    <tr>
+      <td>933</td>
+      <td>BYN</td>
+      <td>Белорусский рубль</td>
+      <td>1</td>
+      <td id = "BYN">32</td>
+    </tr>
+
+  </table>
+  <button type="button" name="button" class="button">Обновить</button>
+    </div>
+  <script type="text/javascript" src="getdata.js"> </script>
+  </body>
+</html>
