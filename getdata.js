@@ -16,13 +16,11 @@
 
    var pos_dollar = data_batch.indexOf("Доллар США");
    var dollar_curs = data_batch.slice(pos_dollar + 24, pos_dollar + 32);
-
    var usd_cell = document.getElementById('USD');
      usd_cell.innerHTML = dollar_curs;
 
    var pos_eur = data_batch.indexOf("Евро");
    var eur_curs = data_batch.slice(pos_eur + 18, pos_eur + 26);
-
    var eur_cell = document.getElementById('EUR');
        eur_cell.innerHTML = eur_curs;
     console.log("euro = " + eur_curs + " " + "rub");
@@ -44,7 +42,43 @@
     var byn_cell = document.getElementById('BYN');
         byn_cell.innerHTML = byn_curs;
      console.log("byn = " + byn_curs + " " + "rub");
+  /////////////////////////////////////////////////////////////////////
+   //Рисуем график
+   let canvas = document.getElementById('canvas');
+   let ctx = canvas.getContext('2d');   //указываем элем для 2д рисования
+   ctx.fillStyle = "black"; // Задаём чёрный цвет для линий
+  ctx.lineWidth = 2.0; // Ширина линии
+  ctx.beginPath(); // Запускает путь
+  ctx.moveTo(30, 10); // Указываем начальный путь
+  ctx.lineTo(30, 460); // Перемешаем указатель
+  ctx.lineTo(500, 460); // Ещё раз перемешаем указатель
+  ctx.stroke(); // Делаем контур
+  // Цвет для рисования
+  ctx.fillStyle = "black";
 
+  // Массив с меткам месяцев
+  let labels = ["USD", "EUR", "CNY", "KZT", "BYN"];
+
+  // Выводим меток
+  for(var i=0; i<5; i++) {
+      ctx.fillText(labels[i], 50+ i*100, 475);
+  }
+  // Объявляем массив данных графика
+  let data = [ dollar_curs, eur_curs, cny_curs, kzt_curs, byn_curs ];
+  for (let i = 0; i < data.length; i++){
+    var re = /,/gi;
+    data[i] = data[i].replace(re,'.');
+    data[i] = Number(data[i]);
+  }
+
+
+  // Назначаем зелёный цвет для графика
+  ctx.fillStyle = "red";
+  // Цикл для отрисовки графиков
+  for(var i=0; i<data.length; i++) {
+      var dp = data[i];
+      ctx.fillRect(40 + i*100, 460-dp , 50, dp);
+  }
 
 
  });
