@@ -4,11 +4,10 @@
  xhr.send();
 
  if (xhr.status != 200) {
-   alert( xhr.status + ': ' + xhr.statusText ); // пример вывода: 404: Not Found
+   alert( xhr.status + ': ' + xhr.statusText ); //  404: Not Found
  }
     else {
- // вывести результат
- // alert( xhr.responseText ); // responseText -- текст ответа.
+ // alert( xhr.responseText ); // responseText - текст ответа.
  var data_batch = xhr.responseText;
          };
 ////////////////////////////////////////////////////////////////////////////////
@@ -67,10 +66,10 @@ ctx.stroke(); // Делаем контур
 // Цвет для рисования
 ctx.fillStyle = "black";
 
-// Массив с меткам месяцев
+// Массив с метками
 let labels = ["USD", "EUR", "CNY", "KZT", "BYN"];
 
-// Выводим меток
+// Выводим метки
 for(var i=0; i<5; i++) {
     ctx.fillText(labels[i], 50+ i*100, 475);
 }
@@ -83,9 +82,9 @@ for (let i = 0; i < data.length; i++){
 }
 
 
-// Назначаем зелёный цвет для графика
+// Назначаем цвет для графика
 ctx.fillStyle = "red";
-// Цикл для отрисовки графиков
+// Цикл для отрисовки 
 for(var i=0; i<data.length; i++) {
     var dp = data[i];
     ctx.fillRect(40 + i*100, 460-dp , 50, dp);
