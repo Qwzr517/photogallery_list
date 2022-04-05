@@ -1,9 +1,4 @@
-document.querySelector('.button').addEventListener('click', function(e) {
 
-
-
-
- });
  var xhr = new XMLHttpRequest();
  xhr.open('GET', 'https://www.cbr-xml-daily.ru/daily_utf8.xml', false);
  xhr.send();
